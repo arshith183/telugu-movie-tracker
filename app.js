@@ -115,16 +115,14 @@ function displayMovies(movies) {
 function createMovieCard(movie) {
     const card = document.createElement('div');
     card.className = 'movie-card';
-    card.onclick = () => showMovieDetails(movie.id);
-    
+    card.onclick = () => window.location.href = `movie.html?id=${movie.id}`;    
     const posterPath = movie.poster_path 
         ? IMG_BASE_URL + movie.poster_path 
-        : 'https://via.placeholder.com/500x750?text=No+Poster';
-    
     const releaseYear = movie.release_date ? new Date(movie.release_date).getFullYear() : 'N/A';
     const rating = movie.vote_average ? movie.vote_average.toFixed(1) : 'N/A';
     
     card.innerHTML = `
+            <div class="movie-card" onclick="window.location.href='movie.html?id=${movie.id}'">
         <img src="${posterPath}" alt="${movie.title}" class="movie-poster">
         <div class="movie-info">
             <h3 class="movie-title">${movie.title || movie.original_title}</h3>

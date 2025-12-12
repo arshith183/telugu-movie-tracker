@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="video.movie">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    
+    <title></title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Schema.org Movie Markup -->
+    <script type="application/ld+json" id="movie-schema">
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🎬</span>
+                <span class="logo-text">TeluguWatch</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#trending">Trending</a>
+                <a href="index.html#new">New Releases</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="movie-detail-container">
+        <div class="movie-hero" id="movie-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <img id="movie-poster" class="detail-poster" src="" alt="">
+                <div class="hero-info">
+                    <h1 id="movie-title"></h1>
+                    <div class="movie-meta">
+                        <span id="movie-year"></span>
+                        <span id="movie-runtime"></span>
+                        <span id="movie-genre"></span>
+                    </div>
+                    <div class="rating-section">
+                        <div class="rating-box">
+                            <span class="rating-label">IMDb</span>
+                            <span id="imdb-rating" class="rating-value"></span>
+                        </div>
+                        <div class="rating-box">
+                            <span class="rating-label">TMDb</span>
+                            <span id="tmdb-rating" class="rating-value"></span>
+                        </div>
+                    </div>
+                    <p id="movie-tagline" class="tagline"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <!-- Movie Overview -->
+            <section class="detail-section">
+                <h2>📖 Plot Summary</h2>
+                <p id="movie-overview" class="overview-text"></p>
+            </section>
+
+            <!-- Streaming Availability -->
+            <section class="detail-section">
+                <h2>📺 Where to Watch</h2>
+                <div id="streaming-container" class="streaming-grid">
+                    <p class="loading">Loading streaming options...</p>
+                </div>
+            </section>
+
+            <!-- Cast & Crew -->
+            <section class="detail-section">
+                <h2>🎭 Cast & Crew</h2>
+                <div id="cast-container" class="cast-grid"></div>
+            </section>
+
+            <!-- Trailer -->
+            <section class="detail-section" id="trailer-section" style="display:none;">
+                <h2>🎥 Official Trailer</h2>
+                <div id="trailer-container"></div>
+            </section>
+
+            <!-- User Reviews Summary -->
+            <section class="detail-section">
+                <h2>⭐ What Viewers Are Saying</h2>
+                <div id="reviews-container" class="reviews-summary">
+                    <p class="loading">Loading reviews...</p>
+                </div>
+            </section>
+
+            <!-- Similar Movies -->
+            <section class="detail-section">
+                <h2>🎬 Similar Movies You Might Like</h2>
+                <div id="similar-movies" class="movies-grid"></div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TeluguWatch</h3>
+                <p>Your one-stop destination for Telugu cinema streaming information</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Latest Movies</a>
+                <a href="index.html#trending">Top Rated</a>
+            </div>
+        </div>
+        <p class="copyright">© 2025 TeluguWatch. Built by <a href="https://github.com/arshith183" target="_blank">@arshith183</a><br>
+        Data powered by TMDb | This site uses affiliate links</p>
+    </footer>
+
+    <script src="movie-detail.js"></script>
+</body>
+</html>

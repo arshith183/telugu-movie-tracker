@@ -1,0 +1,22 @@
+# Robots.txt for TeluguWatch - Telugu Movies Streaming Guide
+# https://arshith183.github.io/telugu-movie-tracker/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://arshith183.github.io/telugu-movie-tracker/sitemap.xml
+
+# Google bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing bot
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay (be nice to servers)
+Crawl-delay: 1
